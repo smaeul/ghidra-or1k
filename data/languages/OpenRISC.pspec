@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<processor_spec>
+  <context_data>
+    <tracked_set space="ram">
+      <set name="r0" val="0" />
+    </tracked_set>
+  </context_data>
+</processor_spec>

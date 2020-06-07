@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language_definitions>
+  <language processor="OpenRISC"
+            endian="big"
+            size="32"
+            variant="default"
+            version="1.0"
+            slafile="OpenRISC.sla"
+            processorspec="OpenRISC.pspec"
+            id="OpenRISC:BE:32:default">
+    <description>OpenRISC 1000 ORBIS32 BE</description>
+    <compiler name="default" spec="OpenRISC.cspec" id="default" />
+  </language>
+</language_definitions>
