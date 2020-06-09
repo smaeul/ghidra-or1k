@@ -12,4 +12,15 @@
     <description>OpenRISC 1000 ORBIS32 BE</description>
     <compiler name="default" spec="OpenRISC.cspec" id="default" />
   </language>
+  <language processor="OpenRISC"
+            endian="big"
+            size="32"
+            variant="AR100+H3"
+            version="1.0"
+            slafile="OpenRISC.sla"
+            processorspec="AR100_H3.pspec"
+            id="OpenRISC:BE:32:AR100+H3">
+    <description>OpenRISC 1000 for AR100 (H3)</description>
+    <compiler name="default" spec="OpenRISC.cspec" id="default" />
+  </language>
 </language_definitions>

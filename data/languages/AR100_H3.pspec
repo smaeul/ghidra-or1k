@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<processor_spec>
+  <context_data>
+    <tracked_set space="ram">
+      <set name="r0" val="0" />
+    </tracked_set>
+  </context_data>
+
+  <volatile inputop="mmio_read" outputop="mmio_write">
+    <range space="ram" first="0x01000000" last="0x01ffffff" />
+  </volatile>
+
+  <default_memory_blocks>
+    <memory_block name="DE"           start_address="0x01000000" length="0x00400000" initialized="false" />
+    <memory_block name="DEINTERLACE"  start_address="0x01400000" length="0x00020000" initialized="false" />
+    <memory_block name="SYSCON"       start_address="0x01c00000" length="0x00001000" initialized="false" />
+    <memory_block name="DMA"          start_address="0x01c02000" length="0x00001000" initialized="false" />
+    <memory_block name="NAND"         start_address="0x01c03000" length="0x00001000" initialized="false" />
+    <memory_block name="TS"           start_address="0x01c06000" length="0x00001000" initialized="false" />
+    <memory_block name="KEYMEM"       start_address="0x01c0b000" length="0x00001000" initialized="false" />
+    <memory_block name="TCON0"        start_address="0x01c0c000" length="0x00001000" initialized="false" />
+    <memory_block name="TCON1"        start_address="0x01c0d000" length="0x00001000" initialized="false" />
+    <memory_block name="VE"           start_address="0x01c0e000" length="0x00001000" initialized="false" />
+    <memory_block name="MMC0"         start_address="0x01c0f000" length="0x00001000" initialized="false" />
+    <memory_block name="MMC1"         start_address="0x01c10000" length="0x00001000" initialized="false" />
+    <memory_block name="MMC2"         start_address="0x01c11000" length="0x00001000" initialized="false" />
+    <memory_block name="SID"          start_address="0x01c14000" length="0x00000400" initialized="false" />
+    <memory_block name="CE"           start_address="0x01c15000" length="0x00001000" initialized="false" />
+    <memory_block name="MSGBOX"       start_address="0x01c17000" length="0x00001000" initialized="false" />
+    <memory_block name="SPINLOCK"     start_address="0x01c18000" length="0x00001000" initialized="false" />
+    <memory_block name="USBOTG"       start_address="0x01c19000" length="0x00001000" initialized="false" />
+    <memory_block name="USB0"         start_address="0x01c1a000" length="0x00001000" initialized="false" />
+    <memory_block name="USB1"         start_address="0x01c1b000" length="0x00001000" initialized="false" />
+    <memory_block name="USB2"         start_address="0x01c1c000" length="0x00001000" initialized="false" />
+    <memory_block name="USB3"         start_address="0x01c1d000" length="0x00001000" initialized="false" />
+    <memory_block name="TZASC"        start_address="0x01c1e000" length="0x00001000" initialized="false" />
+    <memory_block name="CCU"          start_address="0x01c20000" length="0x00000400" initialized="false" />
+    <memory_block name="PIO"          start_address="0x01c20800" length="0x00000400" initialized="false" />
+    <memory_block name="TIMER"        start_address="0x01c20c00" length="0x00000400" initialized="false" />
+    <memory_block name="SPDIF"        start_address="0x01c21000" length="0x00000400" initialized="false" />
+    <memory_block name="PWM"          start_address="0x01c21400" length="0x00000400" initialized="false" />
+    <memory_block name="KEYADC"       start_address="0x01c21800" length="0x00000400" initialized="false" />
+    <memory_block name="I2S0"         start_address="0x01c22000" length="0x00000400" initialized="false" />
+    <memory_block name="I2S1"         start_address="0x01c22400" length="0x00000400" initialized="false" />
+    <memory_block name="I2S2"         start_address="0x01c22800" length="0x00000400" initialized="false" />
+    <memory_block name="CODEC"        start_address="0x01c22c00" length="0x00000800" initialized="false" />
+    <memory_block name="SPC"          start_address="0x01c23400" length="0x00000400" initialized="false" />
+    <memory_block name="THS"          start_address="0x01c25000" length="0x00000400" initialized="false" />
+    <memory_block name="UART0"        start_address="0x01c28000" length="0x00000400" initialized="false" />
+    <memory_block name="UART1"        start_address="0x01c28400" length="0x00000400" initialized="false" />
+    <memory_block name="UART2"        start_address="0x01c28800" length="0x00000400" initialized="false" />
+    <memory_block name="UART3"        start_address="0x01c28c00" length="0x00000400" initialized="false" />
+    <memory_block name="I2C0"         start_address="0x01c2ac00" length="0x00000400" initialized="false" />
+    <memory_block name="I2C1"         start_address="0x01c2b000" length="0x00000400" initialized="false" />
+    <memory_block name="I2C2"         start_address="0x01c2b400" length="0x00000400" initialized="false" />
+    <memory_block name="SCR"          start_address="0x01c2c400" length="0x00000400" initialized="false" />
+    <memory_block name="EMAC"         start_address="0x01c30000" length="0x00010000" initialized="false" />
+    <memory_block name="GPU"          start_address="0x01c40000" length="0x00010000" initialized="false" />
+    <memory_block name="HSTIMER"      start_address="0x01c60000" length="0x00001000" initialized="false" />
+    <memory_block name="DRAMCOM"      start_address="0x01c62000" length="0x00001000" initialized="false" />
+    <memory_block name="DRAMCTL"      start_address="0x01c63000" length="0x00001000" initialized="false" />
+    <memory_block name="DRAMPHY"      start_address="0x01c65000" length="0x00001000" initialized="false" />
+    <memory_block name="SPI0"         start_address="0x01c68000" length="0x00001000" initialized="false" />
+    <memory_block name="SPI1"         start_address="0x01c69000" length="0x00001000" initialized="false" />
+    <memory_block name="SCU"          start_address="0x01c80000" length="0x00010000" initialized="false" />
+    <memory_block name="CSI"          start_address="0x01cb0000" length="0x00050000" initialized="false" />
+    <memory_block name="TVE"          start_address="0x01e00000" length="0x00010000" initialized="false" />
+    <memory_block name="HDMI"         start_address="0x01ee0000" length="0x00020000" initialized="false" />
+    <memory_block name="RTC"          start_address="0x01f00000" length="0x00000400" initialized="false" />
+    <memory_block name="R_TIMER"      start_address="0x01f00800" length="0x00000400" initialized="false" />
+    <memory_block name="R_INTC"       start_address="0x01f00c00" length="0x00000400" initialized="false" />
+    <memory_block name="R_WDOG"       start_address="0x01f01000" length="0x00000400" initialized="false" />
+    <memory_block name="R_PRCM"       start_address="0x01f01400" length="0x00000400" initialized="false" />
+    <memory_block name="R_TWD"        start_address="0x01f01800" length="0x00000400" initialized="false" />
+    <memory_block name="R_CPUCFG"     start_address="0x01f01c00" length="0x00000400" initialized="false" />
+    <memory_block name="R_CIR_RX"     start_address="0x01f02000" length="0x00000400" initialized="false" />
+    <memory_block name="R_I2C"        start_address="0x01f02400" length="0x00000400" initialized="false" />
+    <memory_block name="R_UART"       start_address="0x01f02800" length="0x00000400" initialized="false" />
+    <memory_block name="R_PIO"        start_address="0x01f02c00" length="0x00000400" initialized="false" />
+    <memory_block name="R_PWM"        start_address="0x01f03800" length="0x00000400" initialized="false" />
+  </default_memory_blocks>
+
+  <default_symbols>
+    <symbol address="0x100" entry="true" name="or1k_reset" />
+    <symbol address="0x200" entry="true" name="or1k_bus_error" />
+    <symbol address="0x300" entry="true" name="or1k_data_page_fault" />
+    <symbol address="0x400" entry="true" name="or1k_inst_page_fault" />
+    <symbol address="0x500" entry="true" name="or1k_timer_tick" />
+    <symbol address="0x600" entry="true" name="or1k_alignment_fault" />
+    <symbol address="0x700" entry="true" name="or1k_illegal_instruction" />
+    <symbol address="0x800" entry="true" name="or1k_external_interrupt" />
+    <symbol address="0x900" entry="true" name="or1k_dtlb_miss" />
+    <symbol address="0xa00" entry="true" name="or1k_itlb_miss" />
+    <symbol address="0xb00" entry="true" name="or1k_range_exception" />
+    <symbol address="0xc00" entry="true" name="or1k_system_call" />
+    <symbol address="0xd00" entry="true" name="or1k_fp_exception" />
+    <symbol address="0xe00" entry="true" name="or1k_trap" />
+  </default_symbols>
+</processor_spec>
